@@ -56,7 +56,7 @@ public class Anggota {
     // Method untuk mengangsur pinjaman
     public void angsur(int nominal) {
         if (nominal > 0) {
-            double minimalAngsuran = 0.1 * jumlahPinjaman; // 10% dari jumlah pinjaman saat ini
+            double minimalAngsuran = 0.1 +jumlahPinjaman; // 10% dari jumlah pinjaman saat ini
             if (nominal >= minimalAngsuran) {
                 jumlahPinjaman -= nominal;
                 if (jumlahPinjaman < 0) {
