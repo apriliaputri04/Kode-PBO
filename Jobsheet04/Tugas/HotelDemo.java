@@ -2,7 +2,7 @@ package Jobsheet04.Tugas;
 
 import java.time.LocalDateTime;
 
-public class Main {
+public class HotelDemo {
     public static void main(String[] args) {
         // Membuat objek Tamu
         Tamu tamu1 = new Tamu("Aprilia Putri Anggraeni", "097154", "085755798671", "Jl. Semanggi Barat No.14");
