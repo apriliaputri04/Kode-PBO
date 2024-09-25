@@ -77,8 +77,7 @@ public class Tamu {
     public ArrayList<Reservasi> getDaftarReservasi() {
         return daftarReservasi; // Mengembalikan daftar reservasi yang dimiliki tamu
     }
-
-
+    
     // Menampilkan seluruh reservasi beserta kamar
     public void tampilkanReservasi() {
         System.out.printf("Nomor Identitas\t : %s\n", noIdentitas);
