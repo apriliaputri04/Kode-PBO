@@ -2,7 +2,7 @@ package Jobsheet04.Tugas;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
+import java.util.ArrayList;  // Mengimpor kelas ArrayList untuk menyimpan daftar kamar
 
 public class Reservasi {
     private String nomorReservasi;
