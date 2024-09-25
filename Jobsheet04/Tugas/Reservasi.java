@@ -11,6 +11,7 @@ public class Reservasi {
     private String status;
     private ArrayList<Kamar> daftarKamar;
 
+    
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public Reservasi(String nomorReservasi, LocalDateTime tanggalCheckIn, LocalDateTime tanggalCheckOut, String status) {

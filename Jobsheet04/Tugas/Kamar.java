@@ -13,6 +13,7 @@ public class Kamar {
         this.statusKamar = statusKamar;
     }
 
+    // Method untuk mendapatkan informasi kamar dalam bentuk String
     public String getInfo() {
         // Format hargaPerMalam tanpa komanya (bilangan bulat)
         return String.format("Nomor Kamar : %d, Jenis Kamar : %s, Harga Per Malam : %d, Status : %s", 
