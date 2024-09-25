@@ -11,9 +11,10 @@ public class Reservasi {
     private String status;
     private ArrayList<Kamar> daftarKamar;
 
-    
+    //Membuat formatter untuk format tanggal dan waktu yang lebih mudah dibaca
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
+    // Konstruktor untuk inisialisasi objek Reservasi
     public Reservasi(String nomorReservasi, LocalDateTime tanggalCheckIn, LocalDateTime tanggalCheckOut, String status) {
         this.nomorReservasi = nomorReservasi;
         this.tanggalCheckIn = tanggalCheckIn;
@@ -22,6 +23,7 @@ public class Reservasi {
         this.daftarKamar = new ArrayList<>();
     }
 
+    // Method untuk mendapatkan nomor reservasi
     public String getNomorReservasi() {
         return nomorReservasi;
     }
@@ -38,14 +40,16 @@ public class Reservasi {
         return status;
     }
 
+    // Method untuk menambahkan kamar ke dalam daftarKamar
     public void tambahKamar(int nomorKamar, String jenisKamar, double hargaPerMalam, String statusKamar) {
         Kamar kamar = new Kamar(nomorKamar, jenisKamar, hargaPerMalam, statusKamar);
         this.daftarKamar.add(kamar);
     }
 
+    // Method untuk menampilkan semua kamar yang termasuk dalam reservasi
     public void tampilkanKamar() {
-        for (Kamar kamar:daftarKamar) {
-            System.out.println("  "  + kamar.getInfo());
+        for (Kamar kamar:daftarKamar) { // Mengiterasi setiap kamar di daftarKamar
+            System.out.println("  "  + kamar.getInfo()); // Menampilkan informasi kamar menggunakan method getInfo() dari kelas Kamar
         }
     }
 }
