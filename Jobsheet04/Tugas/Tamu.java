@@ -56,13 +56,13 @@ public class Tamu {
         this.alamat = alamat;
     }
 
-    // Metode untuk menambah reservasi
+    // Method untuk menambah reservasi
     public void tambahReservasi(String nomorReservasi, LocalDateTime tanggalCheckIn, LocalDateTime tanggalCheckOut, String status) {
         Reservasi reservasi = new Reservasi(nomorReservasi, tanggalCheckIn, tanggalCheckOut, status); // Membuat objek Reservasi baru
         this.daftarReservasi.add(reservasi);
     }
 
-    // Metode untuk menambah kamar ke dalam reservasi
+    // Method untuk menambah kamar ke dalam reservasi
     public void tambahKamarKeReservasi(int indexReservasi, int nomorKamar, String jenisKamar, double hargaPerMalam, String statusKamar) {
          // Mengecek apakah indeks reservasi valid
         if (indexReservasi >= 0 && indexReservasi < daftarReservasi.size()) {
