@@ -8,12 +8,12 @@ public class Dosen extends Pegawai {
         this.nama = nama;
         this.gaji = gaji;
         this.nidn = nidn;
-        
+
         System.out.println("Objek dari class Dosen dibuat dengan constructor berparameter");
     }
 
     public String getInfo() {
-        return "NIDN    : " + this.nidn + "\n";
+        return "NIDN   : " + this.nidn + "\n";
     }
 
     public String getAllInfo() {
