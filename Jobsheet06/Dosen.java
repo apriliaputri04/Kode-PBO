@@ -13,6 +13,8 @@ public class Dosen extends Pegawai {
         info += "Nama   : " + nama + "\n";
         info += "Gaji   : " + gaji + "\n";
         info += "NIDN   : " + nidn + "\n";
+
+        return info;
     }
 
 }
