@@ -2,8 +2,9 @@ package Jobsheet06;
 
 public class Dosen extends Pegawai {
     public String nidn;
-    
-    public Dosen(){
+
+    public Dosen() {
+        System.out.println(gaji);
         System.out.println("Objek dari class Dosen dibuat");
     }
 
@@ -13,8 +14,7 @@ public class Dosen extends Pegawai {
         info += "Nama   : " + nama + "\n";
         info += "Gaji   : " + gaji + "\n";
         info += "NIDN   : " + nidn + "\n";
-
+        
         return info;
     }
-
 }
