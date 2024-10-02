@@ -8,7 +8,7 @@ public class ElektronikDemo {
         System.out.println(Lenovo.getAllInfo());
 
         // Membuat objek Laptop menggunakan constructor berparameter
-        Laptop Asus = new Laptop("Silver", "Asus", 800000, 2023, "Windows 11", 16);
+        Laptop Asus = new Laptop("Silver", "Asus", 800000, 2023, "Windows 10", 16);
         System.out.println("\nInfo Laptop Asus:");
         System.out.println(Asus.getAllInfo());
 
@@ -23,7 +23,7 @@ public class ElektronikDemo {
         System.out.println(Samsung.getAllInfo());
 
         // Modifikasi nilai atribut dan cetak ulang informasi
-        Asus.merek = "HP";
+        Asus.sistemOperasi = "11";
         Asus.harga = 9000000;
         Samsung.kapasitasBaterai = 6000;
         Samsung.harga = 5000000;
