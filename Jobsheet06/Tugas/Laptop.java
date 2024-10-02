@@ -21,7 +21,7 @@ public class Laptop extends Elektronik {
 
     // Method untuk menampilkan info Laptop
     @Override
-    public String getInfo() {
+    public String getAllInfo() {
         return super.getAllInfo() + "\nSistem Operasi: " + sistemOperasi + "\nKapasitas RAM: " + kapasitasRAM + " GB";
     }
 }

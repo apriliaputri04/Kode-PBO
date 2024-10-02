@@ -14,7 +14,7 @@ public class Elektronik {
         this.harga = 0.0;
         this.tahunProduksi = 0;
     }
-
+    
     // Constructor berparameter (Overloading)
     public Elektronik(String warna, String merek, double harga, int tahunProduksi) {
         this.warna = warna;

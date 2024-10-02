@@ -21,7 +21,7 @@ public class Handphone extends Elektronik {
 
     // Method untuk menampilkan info Handphone
     @Override
-    public String getInfo() {
+    public String getAllInfo() {
         return super.getAllInfo() + "\nUkuran Layar: " + ukuranLayar + " inch" + "\nKapasitas Baterai: " + kapasitasBaterai + " mAh";
     }
 }
