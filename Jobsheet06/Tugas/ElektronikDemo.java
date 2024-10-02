@@ -23,7 +23,7 @@ public class ElektronikDemo {
         System.out.println(Samsung.getAllInfo());
 
         // Modifikasi nilai atribut dan cetak ulang informasi
-        Asus.sistemOperasi = "11";
+        Asus.sistemOperasi = "Windows 11";
         Asus.harga = 9000000;
         Samsung.kapasitasBaterai = 6000;
         Samsung.harga = 5000000;
