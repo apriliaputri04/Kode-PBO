@@ -2,26 +2,38 @@ package Jobsheet06.Tugas;
 
 // Child Class: Handphone
 public class Handphone extends Elektronik {
-    public int ukuranLayar;
-    public int kapasitasBaterai;
+    private int ukuranLayar;
+    private int kapasitasBaterai;
 
-    // Constructor tanpa parameter (Overloading)
+    // Constructor tanpa parameter
     public Handphone() {
-        super();  // Memanggil constructor tanpa parameter dari class parent
+        super();
         this.ukuranLayar = 0;
         this.kapasitasBaterai = 0;
     }
 
-    // Constructor berparameter (Overloading)
+    // Constructor berparameter
     public Handphone(String warna, String merek, double harga, int tahunProduksi, int ukuranLayar, int kapasitasBaterai) {
-        super(warna, merek, harga, tahunProduksi);  // Memanggil constructor berparameter dari class parent
+        super(warna, merek, harga, tahunProduksi);
         this.ukuranLayar = ukuranLayar;
         this.kapasitasBaterai = kapasitasBaterai;
     }
 
-    // Method untuk menampilkan info Handphone
+    // Method overloading
+    public void modifikasiHandphone(int ukuranLayar) {
+        this.ukuranLayar = ukuranLayar;
+    }
+
+    public void modifikasiHandphone(int ukuranLayar, int kapasitasBaterai) {
+        this.ukuranLayar = ukuranLayar;
+        this.kapasitasBaterai = kapasitasBaterai;
+    }
+
+    // Method untuk menampilkan informasi Handphone
     @Override
-    public String getAllInfo() {
-        return super.getAllInfo() + "\nUkuran Layar: " + ukuranLayar + " inch" + "\nKapasitas Baterai: " + kapasitasBaterai + " mAh";
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Ukuran Layar      : " + ukuranLayar + " inch");
+        System.out.println("Kapasitas Baterai : " + kapasitasBaterai + " mAh");
     }
 }

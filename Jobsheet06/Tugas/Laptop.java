@@ -2,26 +2,38 @@ package Jobsheet06.Tugas;
 
 // Child Class: Laptop
 public class Laptop extends Elektronik {
-    public String sistemOperasi;
-    public int kapasitasRAM;
+    private String sistemOperasi;
+    private int kapasitasRAM;
 
-    // Constructor tanpa parameter (Overloading)
+    // Constructor tanpa parameter
     public Laptop() {
-        super();  // Memanggil constructor tanpa parameter dari class parent
+        super();
         this.sistemOperasi = "Tidak diketahui";
         this.kapasitasRAM = 0;
     }
 
-    // Constructor berparameter (Overloading)
+    // Constructor berparameter
     public Laptop(String warna, String merek, double harga, int tahunProduksi, String sistemOperasi, int kapasitasRAM) {
-        super(warna, merek, harga, tahunProduksi);  // Memanggil constructor berparameter dari class parent
+        super(warna, merek, harga, tahunProduksi);
         this.sistemOperasi = sistemOperasi;
         this.kapasitasRAM = kapasitasRAM;
     }
 
-    // Method untuk menampilkan info Laptop
+    // Method overloading
+    public void modifikasiLaptop(String sistemOperasi) {
+        this.sistemOperasi = sistemOperasi;
+    }
+
+    public void modifikasiLaptop(String sistemOperasi, int kapasitasRAM) {
+        this.sistemOperasi = sistemOperasi;
+        this.kapasitasRAM = kapasitasRAM;
+    }
+
+    // Method untuk menampilkan informasi Laptop
     @Override
-    public String getAllInfo() {
-        return super.getAllInfo() + "\nSistem Operasi: " + sistemOperasi + "\nKapasitas RAM: " + kapasitasRAM + " GB";
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Sistem Operasi : " + sistemOperasi);
+        System.out.println("Kapasitas RAM  : " + kapasitasRAM + " GB");
     }
 }

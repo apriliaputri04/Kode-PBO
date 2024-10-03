@@ -2,36 +2,28 @@ package Jobsheet06.Tugas;
 
 public class ElektronikDemo {
     public static void main(String[] args) {
-        // Membuat objek Laptop menggunakan constructor tanpa parameter
-        Laptop Lenovo = new Laptop();
-        System.out.println("Info Laptop Lenovo:");
-        System.out.println(Lenovo.getAllInfo());
+        // Membuat objek Laptop
+        Laptop laptop1 = new Laptop("Silver", "Asus", 8000000, 2023, "Windows 10", 16);
+        System.out.println("Informasi Laptop Sebelum Modifikasi : ");
+        laptop1.printInfo();
+        
+        // Modifikasi Laptop
+        laptop1.modifikasiElektronik("Black", 9000000); // Dari parent class
+        laptop1.modifikasiLaptop("Windows 11", 32); // Dari child class
+        System.out.println("\nInformasi Laptop Setelah Modifikasi : ");
+        laptop1.printInfo();
 
-        // Membuat objek Laptop menggunakan constructor berparameter
-        Laptop Asus = new Laptop("Silver", "Asus", 800000, 2023, "Windows 10", 16);
-        System.out.println("\nInfo Laptop Asus:");
-        System.out.println(Asus.getAllInfo());
+        System.out.println();
 
-        // Membuat objek Handphone menggunakan constructor tanpa parameter
-        Handphone handphone1 = new Handphone();
-        System.out.println("\nInfo Handphone Oppo:");
-        System.out.println(handphone1.getAllInfo());
+        // Membuat objek Handphone
+        Handphone handphone1 = new Handphone("Hitam", "Samsung", 7000000, 2024, 6, 5000);
+        System.out.println("Informasi Handphone Sebelum Modifikasi : ");
+        handphone1.printInfo();
 
-        // Membuat objek Handphone menggunakan constructor berparameter
-        Handphone Samsung = new Handphone("Hitam", "Samsung", 7000000, 2024, 6, 5000);
-        System.out.println("\nInfo Handphone Samsung:");
-        System.out.println(Samsung.getAllInfo());
-
-        // Modifikasi nilai atribut dan cetak ulang informasi
-        Asus.sistemOperasi = "Windows 11";
-        Asus.harga = 9000000;
-        Samsung.kapasitasBaterai = 6000;
-        Samsung.harga = 5000000;
-
-        System.out.println("\nSetelah Modifikasi Info Laptop Asus:");
-        System.out.println(Asus.getAllInfo());
-
-        System.out.println("\nSetelah Modifikasi Info Handphone Samsung:");
-        System.out.println(Samsung.getAllInfo());
+        // Modifikasi Handphone
+        handphone1.modifikasiElektronik("Blue", 5000000); // Dari parent class
+        handphone1.modifikasiHandphone(7, 6000); // Dari child class
+        System.out.println("\nInformasi Handphone Setelah Modifikasi : ");
+        handphone1.printInfo();
     }
 }
