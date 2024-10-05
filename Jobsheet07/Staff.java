@@ -30,11 +30,12 @@ public class Staff extends Karyawan {
     }
 
     public void lihatInfo() {
-        System.out.println("NIP               : " + this.getNip());
-        System.out.println("Nama              : " + this.getNama());
-        System.out.println("Golongan          : " + this.getGolongan());
-        System.out.println("Jml Lembur        : " + this.getLembur());
-        System.out.printf("Gaji Lembur  : %.0f\n", this.getGajiLembur());
-        System.out.printf("Gaji         : %.0f\n", this.getGaji());
+        System.out.printf("NIP           : %s\n", this.getNip());
+        System.out.printf("Nama          : %s\n", this.getNama());
+        System.out.printf("Golongan      : %s\n", this.getGolongan());
+        System.out.printf("Jumlah Lembur : %d\n", this.getLembur());
+        System.out.printf("Gaji Lembur   : Rp %.0f\n", this.getGajiLembur());
+        System.out.printf("Total Gaji    : Rp %.0f\n", this.getGaji(lembur, gajiLembur));
+        System.out.println();
     }
 }

@@ -26,25 +26,23 @@ public class Manager extends Karyawan {
     }
 
     public void viewStaff() {
-        int i;
-        System.out.println("----------------------------------------");
-        for (i = 0; i < st.length; i++) {
+        for (int i = 0; i < st.length; i++) {
             if (st[i] != null) {  // Cek apakah elemen array staff tidak null
                 st[i].lihatInfo();
             }
         }
-        System.out.println("---------------------------------------");
     }
 
     public void lihatInfo() {
-        System.out.println("Manager         : " + this.getBagian());
-        System.out.println("NIP             : " + this.getNip());
-        System.out.println("Nama            : " + this.getNama());
-        System.out.println("Golongan        : " + this.getGolongan());
-        System.out.printf("Tunjangan : %.0f\n", this.getTunjangan());
-        System.out.printf("Gaji      : %.0f\n", this.getGaji());
-        System.out.println("Bagian          : " + this.getBagian());
+        System.out.printf("NIP           : %s\n", this.getNip());
+        System.out.printf("Nama          : %s\n", this.getNama());
+        System.out.printf("Golongan      : %s\n", this.getGolongan());
+        System.out.printf("Tunjangan     : Rp %.0f\n", this.getTunjangan());
+        System.out.printf("Total Gaji    : Rp %.0f\n", this.getGaji());
+        System.out.printf("Bagian        : %s\n", this.getBagian());
+        System.out.println("-----------------------------");
         this.viewStaff();
+        System.out.println();
     }
 
     public double getGaji() {

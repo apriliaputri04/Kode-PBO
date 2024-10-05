@@ -2,7 +2,11 @@ package Jobsheet07;
 
 public class Utama {
     public static void main(String[] args) {
+        System.out.println();
         System.out.println("Program Testing Class Manager & Staff");
+        System.out.println("=====================================");
+        System.out.println();
+
         Manager man[] = new Manager[2];
         Staff staff1[] = new Staff[2];
         Staff staff2[] = new Staff[3];  // Ditambah 1 staff lagi untuk manajer kedua
@@ -57,14 +61,13 @@ public class Utama {
         staff2[2].setNama("Mentari");
         staff2[2].setNip("0007");
         staff2[2].setGolongan("3");
-        staff2[2].setLembur(3);
+        staff2[2].setLembur(6);
         staff2[2].setGajiLembur(20000);
 
         man[1].setStaff(staff2);
 
         // Tampilkan informasi manager dan staff
         man[0].lihatInfo();
-        System.out.println();
         man[1].lihatInfo();
     }
 }
