@@ -5,9 +5,9 @@ public class Utama {
         System.out.println("Program Testing Class Manager & Staff");
         Manager man[] = new Manager[2];
         Staff staff1[] = new Staff[2];
-        Staff staff2[] = new Staff[3];
+        Staff staff2[] = new Staff[3];  // Ditambah 1 staff lagi untuk manajer kedua
 
-        //pembuatan manager
+        // Pembuatan manager pertama
         man[0] = new Manager();
         man[0].setNama("Tedjo");
         man[0].setNip("101");
@@ -22,6 +22,7 @@ public class Utama {
         man[1].setTunjangan(2500000);
         man[1].setBagian("Pemasaran");
 
+        // Staff untuk manager pertama
         staff1[0] = new Staff();
         staff1[0].setNama("Usman");
         staff1[0].setNip("0003");
@@ -37,6 +38,7 @@ public class Utama {
         staff1[1].setGajiLembur(55000);
         man[0].setStaff(staff1);
 
+        // Staff untuk manager kedua
         staff2[0] = new Staff();
         staff2[0].setNama("Hendra");
         staff2[0].setNip("0004");
@@ -44,11 +46,25 @@ public class Utama {
         staff2[0].setLembur(15);
         staff2[0].setGajiLembur(5500);
 
-        // Assign staff2 to manager
+        staff2[1] = new Staff();  // Staff kedua untuk manager kedua
+        staff2[1].setNama("Arie");
+        staff2[1].setNip("0006");
+        staff2[1].setGolongan("4");
+        staff2[1].setLembur(5);
+        staff2[1].setGajiLembur(10000);
+
+        staff2[2] = new Staff();  // Staff ketiga untuk manager kedua
+        staff2[2].setNama("Mentari");
+        staff2[2].setNip("0007");
+        staff2[2].setGolongan("3");
+        staff2[2].setLembur(3);
+        staff2[2].setGajiLembur(20000);
+
         man[1].setStaff(staff2);
 
-        // Display information
+        // Tampilkan informasi manager dan staff
         man[0].lihatInfo();
+        System.out.println();
         man[1].lihatInfo();
     }
 }
