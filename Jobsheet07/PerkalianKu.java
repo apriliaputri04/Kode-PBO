@@ -6,7 +6,7 @@ public class PerkalianKu {
     }
 
     void perkalian(double a, double b) {
-        System.out.println(a * b);
+        System.out.println(a * b * c);
     }
 
     public static void main(String[] args) {
