@@ -34,7 +34,7 @@ public class Staff extends Karyawan {
         System.out.println("Nama              : " + this.getNama());
         System.out.println("Golongan          : " + this.getGolongan());
         System.out.println("Jml Lembur        : " + this.getLembur());
-        System.out.printf("Gaji Lembur : %.0f\n", this.getGajiLembur());
-        System.out.printf("Gaji        : %.0f\n", this.getGaji());
+        System.out.printf("Gaji Lembur  : %.0f\n", this.getGajiLembur());
+        System.out.printf("Gaji         : %.0f\n", this.getGaji());
     }
 }
