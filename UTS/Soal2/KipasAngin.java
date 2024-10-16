@@ -1,9 +1,9 @@
 package UTS.Soal2;
 
 public class KipasAngin extends Elektronik {
-    private int kecepatan;
-    private String tipeKipas;
-    private boolean isDaya;
+    public int kecepatan;
+    public String tipeKipas;
+    public boolean isDaya;
 
     public KipasAngin(String merek, String warna, String ukuran, double daya, 
                       int kecepatan, String tipeKipas) {
