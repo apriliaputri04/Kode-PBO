@@ -1,9 +1,9 @@
 package UTS.Soal2;
 
 public class KipasAnginUSB extends KipasAngin {
-    public String portUSB;
-    public String fiturTambahan;
-    public boolean dayaUSB;
+    private String portUSB;
+    private String fiturTambahan;
+    private boolean dayaUSB;
 
     public KipasAnginUSB(String merek, String warna, String ukuran, double daya, 
                          int kecepatan, String tipeKipas, String portUSB, 
