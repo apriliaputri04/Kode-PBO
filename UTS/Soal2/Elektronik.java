@@ -1,10 +1,10 @@
 package UTS.Soal2;
 
 public class Elektronik {
-    public String merek;
-    public String warna;
-    public String ukuran;
-    public double daya;
+    protected String merek;
+    protected String warna;
+    protected String ukuran;
+    protected double daya;
 
     public Elektronik(String merek, String warna, String ukuran, double daya) {
         this.merek = merek;
