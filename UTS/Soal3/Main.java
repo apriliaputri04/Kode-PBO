@@ -17,7 +17,7 @@ public class Main {
         Admin admin1 = new Admin(adminProfile);
 
         // Deklarasi objek kendaraan (Mobil)
-        Kendaraan mobil = new Kendaraan(1, "Mobil", "HR-V", "Pertalite", 2022);
+        Kendaraan mobil = new Kendaraan(1, "Honda", "HR-V", "Pertalite", 2022);
         admin1.addKendaraan(mobil);
 
         // Simulasi login untuk admin dan customer
