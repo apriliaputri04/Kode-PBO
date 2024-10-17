@@ -49,7 +49,7 @@ public class Main {
                             System.out.println("3. Tampilkan Kendaraan");
                             System.out.println("4. Ambil Keluhan dari Customer");
                             System.out.println("5. Verifikasi Customer");
-                            System.out.println("6. Logout");
+                            System.out.println("0. Logout");
                             System.out.print("Pilih Opsi: ");
                             int adminChoice = sc.nextInt();
                             sc.nextLine(); // Konsumsi newline
