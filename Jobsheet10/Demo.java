@@ -1,7 +1,12 @@
 package Jobsheet10;
 
+import java.util.ArrayList;
+
 public class Demo {
     public static void main(String[] args) {
+
+        ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>();
+        
         // Membuat objek dosen
         Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom., M.Kom.", "199402");
         Dosen dosen2 = new Dosen("19780165", "Muhammad, S.T., M.T.", "197801");
